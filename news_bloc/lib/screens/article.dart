@@ -37,6 +37,12 @@ class ArticleScreen extends StatelessWidget {
             Image.network(
               news.urlToImage ??
                   'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMxghWKz3Gq_0VKVTyEwzr-t5V9MtXxpQmeA&usqp=CAU',
+              errorBuilder: (_, __, ___) {
+                return Image.asset(
+                  'assets/images/imageError.png',
+                  errorBuilder: (_, __, ___) => Container(),
+                );
+              },
               fit: BoxFit.fill,
               height: isRounded() ? deviceHeight : deviceHeight * 0.4,
               width: deviceWidth * 0.90,
@@ -47,7 +53,8 @@ class ArticleScreen extends StatelessWidget {
                 style: const TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.w500,
-                    color: Colors.black87),
+                    color: Colors.black87,
+                ),
                 textWidthBasis: TextWidthBasis.longestLine,
               ),
               subtitle: Text(

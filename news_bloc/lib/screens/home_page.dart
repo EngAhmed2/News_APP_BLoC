@@ -32,30 +32,14 @@ class _HomePageState extends State<HomePage> {
       child: Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
-          title: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              const Text(
-                'News',
-                style: TextStyle(
-                  fontSize: 32,
-                  fontWeight: FontWeight.w600,
-                  fontFamily: 'Inter',
-                  color: Color(0xff231F20),
-                ),
-              ),
-              connect == true
-                  ? const Icon(
-                      Icons.signal_wifi_4_bar,
-                      size: 20,
-                      color: Color(0xff1a1a1a),
-                    )
-                  : const Icon(
-                Icons.signal_wifi_off,
-                size: 20,
-                color: Color(0xff1a1a1a),
-              ),
-            ],
+          title: const Text(
+            'News',
+            style: TextStyle(
+              fontSize: 32,
+              fontWeight: FontWeight.w600,
+              fontFamily: 'Inter',
+              color: Color(0xff231F20),
+            ),
           ),
           systemOverlayStyle: const SystemUiOverlayStyle(
             // Status bar color
