@@ -1,11 +1,15 @@
 # news_bloc
 
 A News Flutter project using "BLoC" state management.
+<h5>
 I use this UI :
-    https://www.figma.com/file/fJGfU8U5ztPfGB8cgOT5kn/Untitled?type=design&node-id=0-1&mode=design&t=gARnR29Xk0vJ9QqE-0
+https://www.figma.com/file/fJGfU8U5ztPfGB8cgOT5kn/Untitled?type=design&node-id=0-1&mode=design&t=gARnR29Xk0vJ9QqE-0
+<h5\>
+<h5>
 and this API :
-    https://newsapi.org
-
+https://newsapi.org
+<h5\>
+    
 ## Getting Started
 
 This project is a starting point for a Flutter application.
